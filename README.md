@@ -1,8 +1,8 @@
-# KeeguCode
+# HituCode
 
 **A Cursor-style desktop cockpit for running Claude CLI and Codex CLI side by side.**
 
-KeeguCode wraps the two agent CLIs (plus plain shells) in one dark, Cursor-flavored
+HituCode wraps the two agent CLIs (plus plain shells) in one dark, Cursor-flavored
 window. Run several sessions at once, split them like tmux, broadcast one prompt to
 both agents, and let a menu-bar radar tell you — at a glance — which sessions are
 **done**, which are **waiting on you**, and which are **still running**.
@@ -16,7 +16,7 @@ both agents, and let a menu-bar radar tell you — at a glance — which session
 ## Feature highlights
 
 ### The green / red / yellow radar (the headline feature)
-KeeguCode watches each session's terminal output and classifies it automatically:
+HituCode watches each session's terminal output and classifies it automatically:
 
 | Light | State | How it's detected |
 | --- | --- | --- |
@@ -40,13 +40,13 @@ KeeguCode watches each session's terminal output and classifies it automatically
 
 ### Cursor-style interface
 - Hidden-inset title bar, dark VS Code/Cursor palette, left activity sidebar.
-- **KC KeeguCode** logo top-left, above the sidebar.
+- **SV HituCode** logo top-left, above the sidebar.
 - **Pinnable sidebar** — pin it open or unpin to auto-hide-on-hover (📌 / 📍).
 - Sidebar sections: **Recent**, **Waiting on you**, **Done**, **Running**.
 - **Command palette** (`⌘K`) to jump to any session or run any action.
 
 ### iTerm2 + tmux muscle
-| Capability | KeeguCode |
+| Capability | HituCode |
 | --- | --- |
 | Split panes (grid up to 4) | ✅ double-click a session / `⌘D` / sidebar ⊞ |
 | Pane zoom / unzoom | ✅ `⌘⇧Z` or the ⤢ button |
@@ -81,7 +81,7 @@ KeeguCode watches each session's terminal output and classifies it automatically
 ## Getting started
 ```bash
 npm install      # also rebuilds node-pty against Electron (electron-builder install-app-deps)
-npm run dev      # launch KeeguCode in development
+npm run dev      # launch HituCode in development
 ```
 
 Build a distributable:

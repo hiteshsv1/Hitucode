@@ -45,7 +45,7 @@ export class SessionManager extends EventEmitter {
       cols: req.cols ?? 80,
       rows: req.rows ?? 24,
       cwd,
-      env: { ...process.env, TERM: 'xterm-256color', KEEGUCODE: '1' }
+      env: { ...process.env, TERM: 'xterm-256color', HITUCODE: '1' }
     })
 
     const meta: SessionMeta = {

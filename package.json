@@ -1,8 +1,8 @@
 {
-  "name": "keegucode",
+  "name": "hitucode",
   "version": "0.1.0",
-  "description": "KeeguCode — a Cursor-style desktop shell for running Claude CLI and Codex CLI sessions side by side, with tmux/iTerm2-grade terminal muscle and a green/red/yellow session radar.",
-  "author": "KeeguCode",
+  "description": "HituCode — a Cursor-style desktop shell for running Claude CLI and Codex CLI sessions side by side, with tmux/iTerm2-grade terminal muscle and a green/red/yellow session radar.",
+  "author": "HituCode",
   "license": "MIT",
   "main": "./out/main/index.js",
   "scripts": {
@@ -37,8 +37,8 @@
     "zustand": "^4.5.4"
   },
   "build": {
-    "appId": "com.keegucode.app",
-    "productName": "KeeguCode",
+    "appId": "com.hitucode.app",
+    "productName": "HituCode",
     "directories": { "output": "release" },
     "files": ["out/**/*", "resources/**/*"],
     "mac": {

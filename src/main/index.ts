@@ -72,7 +72,7 @@ manager.on('counts', (counts: StatusCounts) => {
 manager.on('waiting', (meta: SessionMeta) => {
   if (!Notification.isSupported()) return
   const n = new Notification({
-    title: 'KeeguCode — session needs you',
+    title: 'HituCode — session needs you',
     body: `“${meta.title}” is waiting on your response.`,
     silent: false
   })

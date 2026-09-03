@@ -18,8 +18,8 @@ export function Workspace(): React.JSX.Element {
     <div className="kc-workspace">
       {panes.length === 0 ? (
         <div className="kc-empty">
-          <div className="kc-empty-badge">KC</div>
-          <h1>Welcome to KeeguCode</h1>
+          <div className="kc-empty-badge">SV</div>
+          <h1>Welcome to HituCode</h1>
           <p>
             Run Claude CLI and Codex CLI side by side. Start a session, split panes like tmux,
             broadcast one prompt to both, and let the menu-bar radar tell you which sessions are

@@ -20,7 +20,7 @@ export class TrayController {
 
   init(): void {
     this.tray = new Tray(this.baseImage())
-    this.tray.setToolTip('KeeguCode')
+    this.tray.setToolTip('HituCode')
     this.render(this.manager.counts())
     this.tray.on('click', () => this.onShowWindow())
   }
@@ -32,9 +32,9 @@ export class TrayController {
     if (counts.green) parts.push(`🟢${counts.green}`)
     if (counts.red) parts.push(`🔴${counts.red}`)
     if (counts.yellow) parts.push(`🟡${counts.yellow}`)
-    this.tray.setTitle(parts.length ? ` ${parts.join('  ')}` : ' KC')
+    this.tray.setTitle(parts.length ? ` ${parts.join('  ')}` : ' SV')
     this.tray.setToolTip(
-      `KeeguCode — ${counts.green} done · ${counts.red} waiting · ${counts.yellow} running`
+      `HituCode — ${counts.green} done · ${counts.red} waiting · ${counts.yellow} running`
     )
     this.rebuildMenu()
   }
@@ -54,13 +54,13 @@ export class TrayController {
         : []
 
     const menu = Menu.buildFromTemplate([
-      { label: 'Open KeeguCode', click: () => this.onShowWindow() },
+      { label: 'Open HituCode', click: () => this.onShowWindow() },
       { type: 'separator' },
       ...section('Waiting on you', sessions.filter((s) => isRed(s))),
       ...section('Running', sessions.filter((s) => s.status === 'running')),
       ...section('Done', sessions.filter((s) => s.status === 'done')),
       { type: 'separator' },
-      { label: 'Quit KeeguCode', click: () => app.quit() }
+      { label: 'Quit HituCode', click: () => app.quit() }
     ])
     this.tray.setContextMenu(menu)
   }
